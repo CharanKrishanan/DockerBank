@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dockerbank:
+    image: ${DOCKER_REGISTRY-}dockerbank
+    build:
+      context: .
+      dockerfile: DockerBank\Dockerfile
